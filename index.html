@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Bill Payment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+   <style>
+        body {
+            margin: 0; /* Remove default body margin */
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+           position: fixed; /*Make the navbar part of the hero section */
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(185, 18, 18, 0.1);
+            z-index: 10; /* Ensure navbar is above the hero section */
+            color: #ffffff;
+            padding: 14px 14px;
+            background-color: #333333;
+            font-size: 20px;
+            
+            
+        }
+        
+
+
+        .navbar a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: color 0.3s;
+           font-weight: bolder;
+        }
+
+        .navbar a:hover {
+           /* color: ##004cf0; */
+            color: rgb(49, 144, 233); 
+        }
+        
+
+
+
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('payment.jpg'); /* Replace with your actual image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+            display: block;
+            /* Fix the background image */
+            height: 100vh; /* Full viewport height */
+            width: 100%; /* Ensure full width */
+            
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            
+       
+        }
+        .hero-content {
+            z-index: 1; /* Ensure content is above background */
+        }
+
+        .hero h4 {
+            /*font-size: 3rem;  Adjust font size as needed 
+            margin: 0; /* Remove default margin */
+            font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+            line-height: 1.2;
+        }
+
+        .hero button {
+            margin-top: 20px; /* Space above button */
+            padding: 10px 20px; /* Button padding */
+            background-color:rgb(49, 144, 233); /* Button color */
+            border: none; /* Remove border */
+            color: #fff; /* Text color */
+           /*  font-size: 16px; /* Font size */     font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 20px; /* Rounded corners */
+
+        }
+
+        .hero button:hover {
+            background-color: rgb(49, 144, 233); /* #0056b3 Darker button color on hover */
+        }
+     
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: rgb(49, 144, 233);
+      font-weight: bolder;
+    }
+    
+    
+   
+    .about-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px 0 ; 
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 80px;
+            margin-bottom: 80px;
+            max-width: 1000;
+            padding: 20px; /* Add padding for inner spacing control */
+            background: linear-gradient(135deg, #d7e8f8, #91c3f2);
+            margin-top: 100px;
+           
+        }
+        
+
+        
+
+        .about-text {
+            flex: 1;
+            margin-right: 0px;
+            
+            
+        }
+        .about-text h1 {
+            color: rgb(49, 144, 233);
+            font-size: 48px;
+            padding-bottom: 20px;
+            
+            
+            
+        }
+        .about-text p {
+            line-height: 1.4;
+            font-size: 15px;
+            text-align: center;
+          
+        }
+        .about-image img {
+            
+            border-radius: 28px;
+            width: 500px; /* Fixed width */
+            height: 600px; /* Fixed height */
+            
+        }
+        
+
+
+
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="hero" id="home">
+        <div class="navbar">
+            <div>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#About">About Us</a>
+                <a href="#demo ">Know More</a>
+                <a href="#Contact">Contact Us</a>
+            </div>
+            <div>
+                
+                
+                <a href="in.html">Login/register</a>
+                
+                
+            </div>
+           
+        </div>
+
+        <div class="hero-content">
+            <h4>Efficient and Hassle-Free Utility Fee Payment Services</h4>
+            <button>Enquire</button>
+        </div>
+    </div>
+    <div class="container"  id="services">
+        <h1>OUR SERVICES</h1>
+        <div class="grid">
+          <div class="card">
+            <div class="container">
+                <div class="card__container">
+                   
+                   <article class="card__article">
+                      <img src="p1.jpg" alt="image" class="card__img">
+                      <div class="card__data">
+                         <span class="card__description"> Allow students to register and create accounts using their college ID, ensuring personalized access to the system.</span>
+                         <h2 class="card__title">Student Registration</h2>
+                         
+                      </div>
+                   </article>
+          
+                   <article class="card__article">
+                      <img src="p2.jpg" alt="image" class="card__img">
+                      <div class="card__data">
+                         <span class="card__description">Enable students to pay their tuition and other fees online through multiple payment options</span>
+                         <h2 class="card__title">Fee Payment Portal</h2>
+                         
+                      </div>
+                   </article>
+          
+                   <article class="card__article">
+                      <img src="p3.jpg" alt="image" class="card__img">
+                      <div class="card__data">
+                         <span class="card__description">Offer flexible installment options for students to break down large payments</span>
+                         <h2 class="card__title"> Payment Installment Plan</h2>
+                         
+                      </div>
+                   </article>
+          
+                   <!-- Second Row of Cards -->
+                   <article class="card__article">
+                      <img src="p4.jpg" alt="image" class="card__img">
+                      <div class="card__data">
+                         <span class="card__description">Automated reminders to students and parents for upcoming payment deadlines</span>
+                         <h2 class="card__title">Automated Fee Reminders</h2>
+                         
+                      </div>
+                   </article>
+          
+                   <article class="card__article">
+                      <img src="p5.jpg" alt="image" class="card__img">
+                      <div class="card__data">
+                         <span class="card__description">Provide students with access to detailed transaction histories </span>
+                         <h2 class="card__title">Transaction History and Receipts</h2>
+                        
+                      </div>
+                   </article>
+          
+                   <article class="card__article">
+                      <img src="p6.png" alt="image" class="card__img">
+                      <div class="card__data">
+                         <span class="card__description">Allow administrators to create and manage various fee categories and structures</span>
+                         <h2 class="card__title">Customizable Fee Categories</h2>
+                         
+                      </div>
+                   </article>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="about-section" id = "About">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <p>
+                We at Pay Here bring to you the convenience of paying all your bills right from our office!
+                Instead of standing in the long queues of bill payment counters of different services, you
+                can now pay your electricity, telephone, mobile, insurance bills, etc. in a hassle-free manner. 
+                Our location of functioning is at Malad West, Mumbai, Maharashtra. We are very prominent 
+                in our service. Our company has achieved eminence in this industry because of our clients' 
+                belief and trust. We have a team of professionally trained coordinators and consultants 
+                who despite handling the billing services provide answers to questions concerning online 
+                bill payment.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="fee1.jpg" alt="Invoice Paid Image" class="responsive-image">
+        </div>
+    </div>
+     <!-- Carousel -->
+     <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" >
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+    
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner text-center">
+            <h1>Know More</h1>
+            <div class="carousel-item active">
+                <img src="fee3.jpg" 
+                     alt="Los Angeles" 
+                     class="d-block mx-auto" 
+                     style="height: 400px; width: 50%;">
+                     
+            </div>
+            <div class="carousel-item">
+                <img src="fee2.jpg" 
+                     alt="Chicago" 
+                     class="d-block mx-auto" 
+                     style="height: 400px; width: 50%;">
+                     
+            </div>
+            <div class="carousel-item">
+                <img src="fee4.jpg" 
+                     alt="New York" 
+                     class="d-block mx-auto" 
+                     style="height: 400px; width: 50%;">
+                    
+            </div>
+        </div>
+    
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    
+    
+    <footer class="footer" id="Contact" >
+        <div class="footer-container">
+            <div class="footer-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Address</h3>
+                <p>
+                    Near Seetharampuram,<br>
+                    Narsapur, West Godavari<br>
+                    Andhra Pradesh, India<br>
+                    
+                </p>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-envelope"></i>
+                <h3>General Enquiries</h3>
+                <p>Swarnandhra@gmail.com</p>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>+91-8888888888<br>
+                +91-7777777777</p>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-clock"></i>
+                <h3>Our Timings</h3>
+                <p>Mon - Sat: 9:00 AM - 06:00 PM</p>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
